@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1667BA696225E410CF0EA002 /* Pods_fastlaneTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352D2F85B165034F912ED501 /* Pods_fastlaneTest.framework */; };
+		BF490F56285FE4F60039A813 /* fastlaneTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF490F55285FE4F60039A813 /* fastlaneTestTests.swift */; };
 		BFEDB664285FE05B00AF4A98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB663285FE05B00AF4A98 /* AppDelegate.swift */; };
 		BFEDB666285FE05B00AF4A98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB665285FE05B00AF4A98 /* SceneDelegate.swift */; };
 		BFEDB668285FE05B00AF4A98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDB667285FE05B00AF4A98 /* ViewController.swift */; };
@@ -16,10 +17,22 @@
 		BFEDB670285FE05F00AF4A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEDB66E285FE05F00AF4A98 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BF490F57285FE4F60039A813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFEDB658285FE05B00AF4A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFEDB65F285FE05B00AF4A98;
+			remoteInfo = fastlaneTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		352D2F85B165034F912ED501 /* Pods_fastlaneTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastlaneTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D269D2892B20561BDB29BFC /* Pods-fastlaneTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastlaneTest.debug.xcconfig"; path = "Target Support Files/Pods-fastlaneTest/Pods-fastlaneTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7E6AEABBA0B17D4F2EA505E7 /* Pods-fastlaneTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastlaneTest.release.xcconfig"; path = "Target Support Files/Pods-fastlaneTest/Pods-fastlaneTest.release.xcconfig"; sourceTree = "<group>"; };
+		BF490F53285FE4F60039A813 /* fastlaneTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastlaneTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF490F55285FE4F60039A813 /* fastlaneTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlaneTestTests.swift; sourceTree = "<group>"; };
 		BFEDB660285FE05B00AF4A98 /* fastlaneTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastlaneTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDB663285FE05B00AF4A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFEDB665285FE05B00AF4A98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF490F50285FE4F60039A813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEDB65D285FE05B00AF4A98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,14 +76,22 @@
 				4D269D2892B20561BDB29BFC /* Pods-fastlaneTest.debug.xcconfig */,
 				7E6AEABBA0B17D4F2EA505E7 /* Pods-fastlaneTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF490F54285FE4F60039A813 /* fastlaneTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF490F55285FE4F60039A813 /* fastlaneTestTests.swift */,
+			);
+			path = fastlaneTestTests;
 			sourceTree = "<group>";
 		};
 		BFEDB657285FE05B00AF4A98 = {
 			isa = PBXGroup;
 			children = (
 				BFEDB662285FE05B00AF4A98 /* fastlaneTest */,
+				BF490F54285FE4F60039A813 /* fastlaneTestTests */,
 				BFEDB661285FE05B00AF4A98 /* Products */,
 				B66B18A722E2A69EF4B9C878 /* Pods */,
 				7C1ACEE3C5FB3707A001F6E9 /* Frameworks */,
@@ -74,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				BFEDB660285FE05B00AF4A98 /* fastlaneTest.app */,
+				BF490F53285FE4F60039A813 /* fastlaneTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +124,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF490F52285FE4F60039A813 /* fastlaneTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF490F5B285FE4F60039A813 /* Build configuration list for PBXNativeTarget "fastlaneTestTests" */;
+			buildPhases = (
+				BF490F4F285FE4F60039A813 /* Sources */,
+				BF490F50285FE4F60039A813 /* Frameworks */,
+				BF490F51285FE4F60039A813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF490F58285FE4F60039A813 /* PBXTargetDependency */,
+			);
+			name = fastlaneTestTests;
+			productName = fastlaneTestTests;
+			productReference = BF490F53285FE4F60039A813 /* fastlaneTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BFEDB65F285FE05B00AF4A98 /* fastlaneTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEDB674285FE05F00AF4A98 /* Build configuration list for PBXNativeTarget "fastlaneTest" */;
@@ -123,6 +170,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					BF490F52285FE4F60039A813 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFEDB65F285FE05B00AF4A98;
+					};
 					BFEDB65F285FE05B00AF4A98 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -142,11 +193,19 @@
 			projectRoot = "";
 			targets = (
 				BFEDB65F285FE05B00AF4A98 /* fastlaneTest */,
+				BF490F52285FE4F60039A813 /* fastlaneTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF490F51285FE4F60039A813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEDB65E285FE05B00AF4A98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +244,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF490F4F285FE4F60039A813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF490F56285FE4F60039A813 /* fastlaneTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEDB65C285FE05B00AF4A98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +263,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF490F58285FE4F60039A813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFEDB65F285FE05B00AF4A98 /* fastlaneTest */;
+			targetProxy = BF490F57285FE4F60039A813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BFEDB669285FE05B00AF4A98 /* Main.storyboard */ = {
@@ -217,6 +292,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF490F59285FE4F60039A813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64WAG22Y2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.fastlaneTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlaneTest.app/fastlaneTest";
+			};
+			name = Debug;
+		};
+		BF490F5A285FE4F60039A813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64WAG22Y2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vincent.fastlaneTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastlaneTest.app/fastlaneTest";
+			};
+			name = Release;
+		};
 		BFEDB672285FE05F00AF4A98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -392,6 +503,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF490F5B285FE4F60039A813 /* Build configuration list for PBXNativeTarget "fastlaneTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF490F59285FE4F60039A813 /* Debug */,
+				BF490F5A285FE4F60039A813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BFEDB65B285FE05B00AF4A98 /* Build configuration list for PBXProject "fastlaneTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
